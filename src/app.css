@@ -1,0 +1,51 @@
+html {
+ background-color: #f0f0f0    
+}
+
+.app {
+  width: 100%;
+  margin-left: -4px;
+  background: blanchedalmond;
+}
+
+.app__content {
+  display: flex;
+  align-items: flex-start;
+  width:100%;
+}
+.heroImage{
+  background-image: url(/assets/advertisement.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 20px;
+}
+.galleryImg{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 4px solid #F78CA2;
+  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.galleryImg img {
+  width: 100%;
+  height: auto;
+}
+
+.block {
+  display: block !important;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+  .app__content {
+    display: block;
+  }
+}
+
