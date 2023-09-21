@@ -19,17 +19,16 @@
 }
 
 .flight {
-  display: flex;
   justify-content: space-around;
-  border:3px solid #F78CA2;
   border-radius: 5px;
   margin-bottom: 20px;
-  padding: 2%;
 }
 
 .flightinfo__details {
-  width: 50%;
-  color: #FF6969;
+  color: #fff;
+    padding: 15px;
+    background: #b74233;
+    height: 700px;
 }
 @media only screen and (max-width: 600px) {
   .flightinfo__details {
@@ -123,4 +122,40 @@
   .booking--button:disabled {
     background-color: aqua;
     cursor: default;
+}
+
+.flightinfo__subheading{
+  text-align: center;
+}
+
+.flightinfo__title{
+  text-align: center;
+  font-size: 10px;
+}
+
+.flightinfo__heading{
+  text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.flightinfo__venue{
+  text-align: center;
+  font-size: 10px;
+}
+
+.flightinfo__date{
+  text-align: center;
+  font-size: 10px;
+}
+
+.flightinfo__time{
+  text-align: center;
+  font-size: 10px;
+}
+
+.flightinfo__sectionName{
+  font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
 }

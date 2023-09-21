@@ -40,7 +40,12 @@ class FlightDetails extends Component {
     return (
       <div className="flight" ref="flightRef">
         <div className="flightinfo__details">
-         Watch out this space for more information
+        <h2 className='flightinfo__heading'>RADHASTHAMI</h2>
+        <p className='flightinfo__subheading'>Iskon Gothenburg cordially invites you and your family to join us in the celebration of </p>
+        <div className='flightinfo__title'>THE APPEARANCE DAY OF SHRIMATI RADHA RANI</div>
+        <div className='flightinfo__date'>23rd september</div>
+        <div className='flightinfo__time'>15:30 - 18:30</div>
+        <div className='flightinfo__venue'>Govindas, Karl Johanasgatan 57</div>
       </div>     
       
       </div>    

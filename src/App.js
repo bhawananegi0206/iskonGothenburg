@@ -1,53 +1,70 @@
-import React, { Component } from 'react';
-import './app.css';
-import './reset.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header/Header';
-import Search from './components/searchdetails/Search';
-import Flights from './components/flightdetails/Flights';
+import React, { Component } from 'react'
+import './app.css'
+import './reset.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/header/Header'
+import Search from './components/searchdetails/Search'
+import Flights from './components/flightdetails/Flights'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="app">
+      <div className='app'>
         <Header></Header>
-        <div className='heroImage'>
-            
+        <div className='temple__main'>
+          <div className='temple__leftSection'>
           </div>
-        <section className="app__content">
-        <div className="search__box">
-        <div class="galleryImg">
-          <img src="/assets/gallery1.jpg" alt="Nature" />
+          <div className='temple__subheading'>
+          नमः ॐ विष्णु पादय, कृष्ण पृष्ठाय भूतले, श्रीमते भक्ति वेदांत स्वामिन
+          इति नामिने । <br></br>
+          नमस्ते सरस्वते देवे गौर वाणी प्रचारिणे, निर्विशेष शून्य-वादी पाश्चात्य
+          देश तारिणे ।।
         </div>
-        <div class="galleryImg">
-        <img src="/assets/gallery2.jpg" alt="Nature" />
+          <div className='temple__rightSection'>
+            
+            </div>
         </div>
-        <div class="galleryImg">
-        <img src="/assets/gallery3.jpg" alt="Nature" />
-        </div>
-        <div class="galleryImg">  
-        <img src="/assets/gallery4.jpg" alt="Nature" />
-        </div>
-        </div>
-          <Flights></Flights>
-          <div className="search__box">
-      <div class="galleryImg">
-        <img src="/assets/gallery5.jpg" alt="Nature" />
-      </div>
-      <div class="galleryImg">
-      <img src="/assets/gallery6.jpg" alt="Nature" />
-      </div>
-      <div class="galleryImg">
-      <img src="/assets/gallery7.jpg" alt="Nature" />
-      </div>
-      <div class="galleryImg">  
-      <img src="/assets/gallery8.jpg" alt="Nature" />
-      </div>
-    </div>
+       
+
+        <section className='app__content'>
+          <div className='search__box'>
+            <div className='flight' ref='flightRef'>
+              <div className='flightinfo__details'>
+              <h1 className='flightinfo__sectionName'>EVENTS</h1>
+                <h2 className='flightinfo__heading'>Radhasthami</h2>
+                <div className='flightinfo__title'>
+                  The appearance day of Radha Rani
+                </div>
+                <div className='flightinfo__date'>23rd september</div>
+                <div className='flightinfo__time'>15:30 - 18:30</div>
+                <div className='flightinfo__venue'>
+                  Govindas, Karl Johanasgatan 57
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='middle_section'>
+          <div className="middle_sectionRow"> 
+          <div className="middle_sectionColumn">
+            <img src="/assets/heroImage.png" />
+            </div>
+          </div>
+          </div>
+          <div className='search__box'>
+            <div className='flight' ref='flightRef'>
+              <div className='flightinfo__details'>
+                <h2 className='flightinfo__heading'>DONATION</h2>
+                <p className='flightinfo__subheading'>SWISH ON 123 552 13 49</p>
+                <div className='flightinfo__title'>
+                  WRITE "NAME & DONATION" IN MESSAGE
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

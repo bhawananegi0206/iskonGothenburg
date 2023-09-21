@@ -1,22 +1,24 @@
 .header__section {
   margin-bottom: 0;
   align-items: center;
-  background-color: #F78CA2;
-  height: 112px;
+  background-color: #b74233;
+  height: 90px;
   display: flex;
+  padding: 0 25px;
+
 }
 .header__left{
-width:45%;
+width:85%;
 }
 .header__right{ 
   width:45%;
   height: 100%;
 }
 .header__logo {
-  width: 120px;
-  height: 110px;
-  background-image: url(/assets/logo.jpg);
-  background-size: 120px 135px;
+  width: 114px;
+  height: 84px;
+  background-image: url(/assets/iskonIcon.png);
+  background-size: contain;
   float: left;
   /* margin: 5px 20px 0 62px; */
   background-repeat: no-repeat;
@@ -39,7 +41,7 @@ width:45%;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    background-color: #F78CA2;
+    background-color: #b74233;
   }
   
   
@@ -50,6 +52,10 @@ width:45%;
     align-items: center;
     /* justify-content: center; */
     display: flex;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    font-family: monospace;
+    font-size: 16px;
   }
   .header__link  {
     height: 100%;
@@ -58,12 +64,9 @@ width:45%;
     align-items: center;
   }
   .header__link a:hover:not(.active) {
-    color: #FF6969;
+   text-decoration: underline;
   }
-  
-  .header__active {
-    color: #FF6969;
-  }
+
 
 @media only screen and (min-width: 768px) {
   .header__title {
