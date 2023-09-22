@@ -45,8 +45,11 @@ class App extends Component {
           </div>
           <div className='middle_section'>
           <div className="middle_sectionRow"> 
-          <div className="middle_sectionColumn">
-            <img src="/assets/heroImage.png" />
+          <div className="middle_sectionColumn image-fader">
+            <img src="/assets/collage.png" />
+            <img src="/assets/collage1.png" />
+            <img src="/assets/collage.png" />
+            <img src="/assets/collage1.png" />
             </div>
           </div>
           </div>
